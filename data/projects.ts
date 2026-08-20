@@ -21,7 +21,7 @@ export const projects: Project[] = [
     title: "Smart Shooting Practice System",
 
     description:
-      "A web-based shooting practice management system designed to integrate with Arduino sensor input and track shooting practice data.",
+      "A web-based shooting practice management system designed to collect shooting-session data from Arduino sensors and present performance results through an interactive web interface.",
 
     technologies: [
       "HTML",
@@ -35,24 +35,27 @@ export const projects: Project[] = [
     image: "/projects/shooting-system.jpg",
 
     problem:
-      "Traditional shooting practice can make it difficult to consistently record practice sessions, shot results, accuracy, and performance statistics.",
+      "Traditional shooting practice can make it difficult to consistently record shot results, practice sessions, accuracy, and performance statistics.",
 
     solution:
-      "The system provides a digital platform for managing shooting practice sessions, processing sensor input, recording shot results, and presenting performance statistics through a web interface.",
+      "The system provides a digital platform for managing shooting sessions, processing sensor input, recording shot results, calculating performance statistics, and displaying results through a web interface.",
 
     features: [
-      "Shooting practice session management",
+      "Shooting session management",
       "Shot result tracking",
       "Accuracy calculation",
       "Performance statistics",
       "Arduino sensor integration",
-      "Virtual sensor simulation",
+      "Virtual Arduino input simulation",
+      "Interactive performance dashboard",
     ],
 
     architecture:
-      "The system is designed around a web application that receives shooting-related input, processes the data, stores session information, and presents results through a user interface. Arduino hardware can provide sensor input, while a virtual simulator can reproduce the same input during demonstrations.",
+      "The system is designed around a web application that receives shooting-related events, processes the data, stores session information, and presents results through an interactive dashboard. Physical Arduino sensors can provide real-world input, while a virtual simulator can reproduce the same events for online demonstrations.",
 
-    github: "https://github.com/rasinduchandumina",
+    github: undefined,
+
+    demo: undefined,
 
     featured: true,
   },
@@ -61,7 +64,7 @@ export const projects: Project[] = [
     title: "MealSpace",
 
     description:
-      "A surplus food redistribution application designed to connect available food with people who need it.",
+      "A mobile application concept designed to reduce food waste by connecting surplus food with people who can make use of it.",
 
     technologies: [
       "FlutterFlow",
@@ -73,13 +76,14 @@ export const projects: Project[] = [
     image: "/projects/mealspace.jpg",
 
     problem:
-      "Large amounts of usable food can become surplus while other people in the community may need access to affordable or free food.",
+      "Usable food can become surplus while people in nearby communities may need access to affordable or free food resources.",
 
     solution:
-      "MealSpace provides a platform where users can list available surplus food and discover nearby food listings through categories and location-based filtering.",
+      "MealSpace provides a platform where users can publish surplus food listings and discover available food through categories and location-based filtering.",
 
     features: [
-      "User registration and login",
+      "User registration and authentication",
+      "Email and Google login",
       "Food listing management",
       "Food categories",
       "Location-based filtering",
@@ -88,9 +92,11 @@ export const projects: Project[] = [
     ],
 
     architecture:
-      "The application uses a mobile-oriented frontend created with FlutterFlow and Supabase for backend services, authentication, and application data.",
+      "The application uses FlutterFlow for the mobile application interface and Supabase for authentication, backend services, and application data management.",
 
-    github: "https://github.com/rasinduchandumina",
+    github: undefined,
+
+    demo: undefined,
 
     featured: true,
   },
@@ -99,13 +105,15 @@ export const projects: Project[] = [
     title: "University Library Management System",
 
     description:
-      "A library management system for managing students, books, loans, and library operations.",
+      "A team-based web application developed to manage university library users, books, borrowing operations, returns, and related records.",
 
     technologies: [
       "PHP",
       "MySQL",
       "HTML",
       "CSS",
+      "Git",
+      "GitHub",
     ],
 
     category: "Web",
@@ -113,24 +121,28 @@ export const projects: Project[] = [
     image: "/projects/ulms.jpg",
 
     problem:
-      "Manual library processes can make it difficult to efficiently manage users, books, borrowing records, and return deadlines.",
+      "Manual library processes can make it difficult to efficiently manage users, books, borrowing records, return deadlines, and library operations.",
 
     solution:
-      "The University Library Management System provides a centralized web-based system for managing library users, books, borrowing operations, and related records.",
+      "The system provides a centralized web application for managing students, librarians, books, loans, returns, and related library records.",
 
     features: [
       "Student management",
       "Librarian management",
+      "Administrator management",
       "Book management",
       "Loan management",
       "Return tracking",
       "Database-backed records",
+      "Role-based workflows",
     ],
 
     architecture:
-      "The system uses a layered web architecture with an HTML and CSS frontend, PHP backend logic, and MySQL database storage.",
+      "The system uses a layered web architecture with an HTML and CSS frontend, PHP backend logic, and MySQL database storage. Git and GitHub were used for collaborative source-code management.",
 
-    github: "https://github.com/rasinduchandumina",
+    github: undefined,
+
+    demo: undefined,
 
     featured: true,
   },
