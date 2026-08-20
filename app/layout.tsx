@@ -1,68 +1,69 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
-
 export const metadata: Metadata = {
-      title: "Rasindu Lokugamage | Software Engineering Student",
+  title: {
+    default: "Rasindu Chandumina | Software Engineering Student",
+    template: "%s | Rasindu Chandumina",
+  },
 
-      description:
-        "Portfolio of Rasindu Lokugamage, an undergraduate software engineering student interested in software development, QA, business analysis, and practical technology projects.",
+  description:
+    "Portfolio of Rasindu Chandumina, an undergraduate specializing in Software Systems Technology. Explore my projects, technical skills, education, and experience.",
 
-      keywords: [
-        "Rasindu Lokugamage",
-        "Software Engineering Student",
-        "Software Engineer",
-        "Software Developer",
-        "QA",
-        "Quality Assurance",
-        "Web Development",
-        "Sri Lanka",
-        "Portfolio",
-      ],
+  keywords: [
+    "Rasindu Chandumina",
+    "Software Engineering",
+    "Software Developer",
+    "ICT Undergraduate",
+    "University of Kelaniya",
+    "Software Systems Technology",
+    "Web Development",
+    "QA",
+    "Business Analysis",
+  ],
 
-      authors: [
-        {
-          name: "Rasindu Lokugamage",
-        },
-      ],
+  authors: [
+    {
+      name: "Rasindu Chandumina",
+    },
+  ],
 
-      creator: "Rasindu Lokugamage",
+  creator: "Rasindu Chandumina",
 
-      metadataBase: new URL("http://localhost:3000"),
+  openGraph: {
+    title: "Rasindu Chandumina | Software Engineering Student",
 
-      openGraph: {
-        title: "Rasindu Lokugamage | Software Engineering Student",
+    description:
+      "Explore my projects, skills, education, and experience in software development and technology.",
 
-        description:
-          "Portfolio of Rasindu Lokugamage showcasing software projects, technical skills, education, and experience.",
+    type: "website",
 
-        type: "website",
+    locale: "en_US",
+  },
 
-        locale: "en_US",
-      },
+  twitter: {
+    card: "summary_large_image",
 
-      robots: {
-        index: true,
-        follow: true,
-      },
-    };
-export default function RootLayout({ children }: LayoutProps<"/">) {
+    title: "Rasindu Chandumina | Software Engineering Student",
+
+    description:
+      "Explore my projects, skills, education, and experience in software development and technology.",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html lang="en">
+      <body>{children}</body>
     </html>
   );
 }
